@@ -1,4 +1,3 @@
-/* eslint consistent-this: 0 */
 'use strict';
 
 var test = require('mocha-cases');

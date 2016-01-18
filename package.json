@@ -1,19 +1,21 @@
 {
   "name": "gulp-ccr-parallel",
   "version": "0.1.0",
-  "description": "Configurable gulp recipe plugin that run the tasks array of functions in parallel, without waiting until the previous function has completed.",
+  "description": "Run the tasks array of functions in parallel, without waiting until the previous function has completed. A cascading configurable gulp recipe for gulp-chef.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gulp-ccr/gulp-ccr-parallel.git"
+    "url": "git+https://github.com/gulp-cookery/gulp-ccr-parallel.git"
   },
   "keywords": [
     "gulp",
     "gulp 4.0",
     "gulp-ccr",
+	"gulp-cookery",
+	"gulp-chef",
     "configurable-gulp-recipe",
     "configurable-gulp-recipes",
     "parallel",
@@ -34,16 +36,15 @@
   "author": "Amobiz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gulp-ccr/gulp-ccr-parallel/issues"
+    "url": "https://github.com/gulp-cookery/gulp-ccr-parallel/issues"
   },
-  "homepage": "https://github.com/gulp-ccr/gulp-ccr-parallel#readme",
+  "homepage": "https://github.com/gulp-cookery/gulp-ccr-parallel#readme",
   "devDependencies": {
     "mocha": "^2.3.4",
     "mocha-cases": "^0.1.4"
   },
   "dependencies": {
     "async": "^1.5.0",
-    "async-done": "^1.2.0",
-    "gulp-util": "^3.0.7"
+    "async-done": "^1.2.0"
   }
 }
