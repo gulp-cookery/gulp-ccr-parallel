@@ -44,7 +44,6 @@
   "dependencies": {
     "async": "^1.5.0",
     "async-done": "^1.2.0",
-    "gulp-ccr-helper": "git+https://github.com/gulp-ccr/gulp-ccr-helper.git",
     "gulp-util": "^3.0.7"
   }
 }

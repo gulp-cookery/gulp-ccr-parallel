@@ -1,4 +1,3 @@
-/* eslint consistent-this: 0 */
 'use strict';
 
 /**
@@ -17,12 +16,21 @@ function parallel(done) {
 	var async = require('async');
 	var asyncDone = require('async-done');
 
-	var context = this;
-	var tasks = context.tasks;
+	var gulp = this.gulp;
+	var config = this.config;
+	var helper = this.helper;
+	var tasks = this.tasks;
 
 	async.map(tasks, function (task, itemDone) {
 		asyncDone(function (taskDone) {
-			return task.run.call(context, taskDone);
+			var context;
+
+			context = {
+				gulp: gulp,
+				helper: helper,
+				config: config
+			};
+			return task.call(context, taskDone);
 		}, itemDone);
 	}, done);
 }
