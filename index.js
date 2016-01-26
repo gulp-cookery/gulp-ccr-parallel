@@ -8,7 +8,7 @@
  * async, asnyc-done
  *
  * Note:
- *  Some kind of non-stream version of merge() stream recipe.
+ *  Some kind of non-stream version of merge() recipe.
  *
  * @param done
  */
@@ -83,7 +83,7 @@ function parallel(done) {
 
 parallel.schema = {
 	title: 'parallel',
-	description: 'Run the tasks array of functions in parallel, without waiting until the previous function has completed.',
+	description: 'Run sub tasks in parallel, without waiting until the previous task has completed.',
 	type: 'object',
 	properties: {}
 };
