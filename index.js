@@ -1,17 +1,12 @@
 'use strict';
 
-/**
- * Recipe:
- * parallel
- *
- * Ingredients:
- * async, asnyc-done
- *
- * Note:
- *  Some kind of non-stream version of merge() recipe.
- *
- * @param done
- */
+var schema = {
+	title: 'parallel',
+	description: 'Run sub tasks in parallel, without waiting until the previous task has completed.',
+	type: 'object',
+	properties: {}
+};
+
 function parallel(done) {
 	var async = require('async');
 	var asyncDone = require('async-done');
@@ -81,13 +76,6 @@ function parallel(done) {
 	}
 }
 
-parallel.schema = {
-	title: 'parallel',
-	description: 'Run sub tasks in parallel, without waiting until the previous task has completed.',
-	type: 'object',
-	properties: {}
-};
-
-parallel.type = 'flow';
-
 module.exports = parallel;
+module.exports.schema = schema;
+module.exports.type = 'flow';

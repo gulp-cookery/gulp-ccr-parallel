@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "description": "Run sub tasks in parallel, without waiting until the previous task has completed. A cascading configurable gulp recipe for gulp-chef.",
   "main": "index.js",
-  "scripts": {
-    "test": "mocha"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gulp-cookery/gulp-ccr-parallel.git"
@@ -39,9 +36,8 @@
     "url": "https://github.com/gulp-cookery/gulp-ccr-parallel/issues"
   },
   "homepage": "https://github.com/gulp-cookery/gulp-ccr-parallel#readme",
-  "devDependencies": {
-    "mocha": "^2.3.4",
-    "mocha-cases": "^0.1.4"
+  "peerDependencies": {
+    "gulp-chef": "^0.1.0"
   },
   "dependencies": {
     "async": "^1.5.0",
